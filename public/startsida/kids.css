@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(0, 0, 0, 0.94);
+}
+.Head-Text h1 {
+    position: relative;
+    top: 80px;
+    left: 650px;
+    color: #3dbde3;
+}
+
+.Name-text{
+    position: absolute;
+    font-size: 20px;
+    top: 200px;
+    left: 200px;
+    color: #3dbde3;
+    text-underline-position: under;
+}
+
+.Description-text{
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    left: 300px;
+    color: #3dbde3;
+    font-size: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: -80px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #3dbde3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: start;
+    padding: 12px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+

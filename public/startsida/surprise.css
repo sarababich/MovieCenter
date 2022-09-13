@@ -1,0 +1,49 @@
+
+body {
+    background-color: rgba(0, 0, 0, 0.94);
+}
+
+.Head-Text h1{
+    position: relative ;
+    top: 80px;
+    left: 650px;
+    color: #3dbde3;
+}
+
+.button-typ1{
+    padding: 90px 120px;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+}
+
+.button-typ2{
+    position: relative;
+    top: 200px;
+    left: 330px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: -100px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #3dbde3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: start;
+    padding: 12px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
