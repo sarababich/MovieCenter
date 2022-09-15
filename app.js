@@ -5,7 +5,7 @@ const port = 3000
 const db = require("./database");
 
 app.get('/api/movies', function (req, res) {
-    let sql = "select * from movie"
+    let sql = "select * from movie = ?"
     let params = []
     db.all(sql, params, (err, rows) => {
         if (err) {
@@ -23,3 +23,4 @@ app.get('/api/movies', function (req, res) {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
