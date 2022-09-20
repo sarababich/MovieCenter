@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+background-color: black;
+
+}
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+
+    margin: auto;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3dbde3;
+}
+
+.logo{
+    width: 500px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+@media screen and (max-width: 800px) {
+    .navbar ul li {
+        margin: 10px;
+    }
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.navbar ul li a:hover{
+    color: black;
+}
+
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #3dbde3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: black;
+}
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.product-category{
+    color: #3dbde3;
+}
+
+
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container ::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px;
+    margin-right: 40px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: aqua;
+    color: white;
+}
+
+.product-info{
+    width: 100%;
+    height: 10%;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+    background-color: black;
+}
+
+.nxt-btn{
+    right: 0;
+    background-color: black;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+.pre-btn:hover img, .nxt-btn:hover img {
+    opacity: 1;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.collection{
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+/* Favourite */
+.favoriteBody{
+    background-color: black;
+}
+
+.app{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.addMovie {
+    padding: 20px;
+}
+
+.addMovie label{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+
+}
+.center{
+    text-align: center;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list ol{
+    padding: 20px;
+}
+
+.list ul {
+    background: #3dbde3;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: groove;
+    text-align: center;
+    list-style: none;
+}
+
+.list ol li {
+
+
+    padding: 5px;
+    margin-left: 35px;
+
+}
+
+.list ul li {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+ul {
+    color: white;
+    font-size: 100%;
+}
+.class, img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+#wrapper {
+    background-color: black;
+    width: 800px;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(204,204,204,1);
+}
+
+/* media query for tablets: */
+@media (min-width: 640px) {
+    .container
+}
+
+/* media query for mobiles: */
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+
+    }
+}
