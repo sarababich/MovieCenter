@@ -8,6 +8,24 @@ body{
 background-color: black;
 
 }
+
+h1 {
+    font-size: 35px;
+    font-family: "Times New Roman";
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    color: white;
+    text-align: center;
+}
+
+.p {
+    text-align: center;
+}
+
 .banner{
     width: 100%;
     height: 80vh;
@@ -25,21 +43,14 @@ background-color: black;
     background-color: #3dbde3;
 }
 
-.logo{
-    width: 500px;
-    cursor: pointer;
-}
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
-@media screen and (max-width: 800px) {
-    .navbar ul li {
-        margin: 10px;
-    }
-}
+
 .navbar ul li a{
     text-decoration: none;
     color: white;
@@ -263,14 +274,21 @@ ul {
     color: white;
     font-size: 100%;
 }
+/*------För fetch i libary gällande bilderna------*/
+
 .class, img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
     width: 150px;
+
+
 }
+
+
+/* ------Wrapper, endast för Libary------ */
+
 
 #wrapper {
     background-color: black;
@@ -282,15 +300,115 @@ ul {
     box-shadow: 0px 0px 10px rgba(204,204,204,1);
 }
 
-/* media query for tablets: */
-@media (min-width: 640px) {
-    .container
-}
 
-/* media query for mobiles: */
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
+ /* -----Media Querys för Desktop, iPad och Mobil ----- */
+
+/* Detta är en Desktop
+@media screen and (min-width: 1025px){
+    p {
+        text-align: left;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    navbar{
+        margin: auto;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3dbde3;
+    }
+    main {
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px;
+    }
+    .img{
+        width: 30%;
+        height: auto;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .grid-item{
+        font-size: medium;
+        width: 400px;
+    }
+
+      }
+      */
+
+/* Detta är en iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    p {
+        text-align: left;
+        font-size: 20px;
+    }
+    navbar{
+        margin: auto;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3dbde3;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    .main {
+        margin: 10px auto;
+        display: grid;
+        grid-gap: 10px;
+    }
+    .grid-item{
+        font-size: medium;
+        width: auto;
 
     }
+    .img{
+        width: 25%;
+        height: auto;
+    }
+
+}
+/* Detta är en mobil */
+@media screen and (max-width: 600px){
+    navbar{
+        margin: auto;
+        padding: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3dbde3;
+    }
+    p {
+        text-align: left;
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 10px;
+    }
+    .main {
+        margin: 5px auto;
+        display: grid;
+        grid-gap: 5px;
+    }
+    .grid-item{
+        font-size: small;
+        width: auto;
+
+    }
+    .img{
+        width: 10%;
+        height: auto;
+    }
+
 }
